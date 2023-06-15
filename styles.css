@@ -8,17 +8,20 @@ body {
 
 /* Header */
 #header-container {
-    grid-area:  1 / 2 / 2 / 3
+    grid-area:  1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* Sidebar  */
 #sidebar-container {
-    grid-area: 1 / 1 / 6 / 2
+    grid-area: 1 / 1 / 6 / 2;
 }
 
 /* Main Content */
 #main-container {
-    grid-area:  2 / 2 / 6 / 3
+    grid-area:  2 / 2 / 6 / 3;
 }
 
 
