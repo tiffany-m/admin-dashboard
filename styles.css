@@ -13,11 +13,25 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+.btn-header {
+    background-color: #059669;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 4rem;
+}
+
 /* Sidebar  */
 #sidebar-container {
     grid-area: 1 / 1 / 6 / 2;
     height: 100%;
-    background: #4ade80;
+    background: #059669;
     color: white;
     font-size: 1.5rem;
 }
@@ -54,6 +68,7 @@ h4 {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    background-color: #bbf7d0;
 }
 
 .projects-container {
@@ -70,12 +85,8 @@ h4 {
 
 
 /* TEMP */
-#header-container, #sidebar-container, #main-container {
-    border: solid red 3px;
-}
-
 div {
-    border: solid 1px blue;
+    border: solid 1px rgb(172, 172, 233);
 }
 
 img {
