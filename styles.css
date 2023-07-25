@@ -5,8 +5,8 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,31 +15,102 @@ a {
     color: white;
 }
 
-/* Header */
+.profile-pic {
+    border-radius: 50%;
+    width: 3.5rem;
+}
+
+/* Header ------------------------------------------------------------------------ */
 #header-container {
     grid-area:  1 / 2 / 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn {
+    margin: 0 1rem 0 auto;
+}
+
+input[type=search] {
+    background-color: #d4fde3;
+    border-radius: 20px;
+    border: none;
+    width: 40rem;
+    height: 2.3rem;
+}
+
+.header-buttons-container {
+    align-self: center;
+    justify-self: center;
 }
 
 .btn-header {
     background-color: #059669;
     color: white;
-    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: .8rem 2rem;
     border-radius: 20px;
     border: none;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    border: 1px solid black;
-    width: 4rem;
+.profile-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-/* Sidebar  */
+.notifications {
+    justify-self: right;
+}
+
+.profile-name {
+    justify-self: left;
+}
+
+
+.user-info-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-pic-header {
+    grid-area: 1 / 1 / 3 / 2;
+    justify-self: right;
+    border-radius: 50%;
+    width: 5.5rem;
+    margin-right: 1rem;
+}
+
+.greeting {
+    align-self: end;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.user-info-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sidebar  ---------------------------------------------------------------------- */
 #sidebar-container {
-    grid-area: 1 / 1 / 6 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     height: 100%;
     background: #059669;
     color: white;
@@ -91,13 +162,13 @@ a {
     font-weight: bold;
 }
 
-/* Main Content */
+/* Main Content ------------------------------------------------------ */
 #main-container {
     grid-area:  2 / 2 / 6 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    background-color: #bbf7d0;
+    background-color: #d4fde3;
 }
 
 .projects-container {
