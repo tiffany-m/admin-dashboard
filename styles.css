@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1.25fr 5fr;
     grid-template-rows: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
 }
@@ -44,7 +44,7 @@ input[type=search] {
     background-color: #d4fde3;
     border-radius: 20px;
     border: none;
-    width: 40rem;
+    width: 50rem;
     height: 2.3rem;
 }
 
@@ -82,12 +82,11 @@ input[type=search] {
     justify-self: left;
 }
 
-
 .user-info-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .profile-pic-header {
