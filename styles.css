@@ -11,7 +11,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1.25fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5rem;
@@ -38,17 +38,35 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
     transform: scale(0.95);
 }
 
-.projects-header, .announcements-header, .trending-header {
+.projects-header, 
+.announcements-header, 
+.trending-header {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
-.project, .announcements-container, .trending-container {
+.project, 
+.announcements-container, 
+.trending-container {
     box-shadow: 5px 5px 10px #82d8a2;
 }
 
-.project, .announcements-container, .trending-container {
+.project, 
+.announcements-container, 
+.trending-container {
     background-color: white;
+}
+
+.secondary-links,
+.sidebar-header,
+.profile-header,
+.user-greeting,
+.user-info-name,
+.header-btn,
+.projects-header,
+.project-title,
+.announcements-header,
+.trending-header {
+    font-weight: bold;
 }
 
 /* Sidebar ================================================================================================================================= */
@@ -70,7 +88,6 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
 
 .sidebar-header {
     font-size: 1.75rem;
-    font-weight: bold;
 }
 
 /* Links ---------------------------------- */
@@ -81,7 +98,6 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
     align-items: center;
     margin-top: 2.5rem;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 .main-links {
@@ -98,17 +114,17 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
 }
 
 .icon.sidebar {
-    margin: 1rem 2rem;
     justify-self: end;
     align-self: center;
+    margin: 1rem 2rem;
 }
 
 .logo {
-    margin: 1rem 1.25rem;
     filter: invert(1);
     grid-area: 1 / 1 / 2 / 2;
-    width: 4rem;
     justify-self: center;
+    margin: 1rem 1.25rem;
+    width: 4rem;
 }
 
 /* Header ============================================================================================================================= */
@@ -150,7 +166,6 @@ input[type=search] {
     justify-items: center;
     align-items: center;
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .notifications {
@@ -182,25 +197,22 @@ input[type=search] {
     align-self: end;
     margin-bottom: 5px;
     font-size: 1rem;
-    font-weight: bold;
 }
 
 .user-info-name {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 /* Buttons ------------------------ */
 .header-buttons-container {
     align-self: center;
-    justify-self: left;
+    justify-self: end;
 }
 
 .header-btn {
     background-color: var(--dark-green);
     color: white;
     font-size: 1rem;
-    font-weight: bold;
     margin: 0 1rem 0 .5rem;
     padding: .8rem 2rem;
     border-radius: 20px;
@@ -222,9 +234,9 @@ input[type=search] {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 2rem 1fr 2rem .75fr;
     gap: 1.5rem;
+    background-color: var(--light-green);
     margin-top: 10px;
     padding: 1.5rem;
-    background-color: var(--light-green);
 }
 
 /* Projects ------------------------ */
@@ -248,7 +260,6 @@ input[type=search] {
 
 .project-title{
     font-size: 1.3rem;
-    font-weight: bold;
 }
 
 .project-icons {
