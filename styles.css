@@ -23,7 +23,6 @@ a {
 
 /* Header ------------------------------------------------------------------------ */
 #header-container {
-    background-color: white;
     grid-area:  1 / 2 / 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -178,7 +177,7 @@ input[type=search] {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 3rem 1fr 3rem .75fr;
+    grid-template-rows: 2rem 1fr 2rem .75fr;
     gap: 1.5rem;
     margin-top: 10px;
     padding: 1.5rem;
