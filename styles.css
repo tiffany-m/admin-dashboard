@@ -177,12 +177,12 @@ input[type=search] {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 3rem 1fr 1fr;
+    grid-template-rows: 3rem 1fr 3rem 1fr;
     background-color: #d4fde3;
 }
 
 .projects-container {
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 5 / 2;
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr 1fr;
     margin: 20px;
@@ -241,9 +241,19 @@ input[type=search] {
 }
 
 .trending-container {
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    margin: 20px 20px 20px 0;
 }
 
+.trending-header {
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 /* TEMP -------------------------------------------------------------------*/ 
 /* div {
