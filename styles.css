@@ -164,15 +164,6 @@ input[type=search] {
     font-weight: bold;
 }
 
-/* Main Content ------------------------------------------------------ */
-/* #main-container {
-    grid-area:  2 / 2 / 3 / 3;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #d4fde3;
-} */
-
 #main-container {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
@@ -206,10 +197,6 @@ input[type=search] {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-/* .project-text {
-
-} */
 
 .project-icons {
     justify-self: end;
