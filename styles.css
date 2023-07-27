@@ -16,10 +16,6 @@ a {
     color: white;
 }
 
-a:active {
-    transform: scale(0.95);
-}
-
 .profile-pic {
     border-radius: 50%;
     width: 3.5rem;
@@ -29,7 +25,72 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
     transform: scale(0.95);
 }
 
-/* Header ------------------------------------------------------------------------ */
+img {
+    width: 30px;
+    height: auto;
+}
+
+/* Sidebar ================================================================================================================================= */
+#sidebar-container {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100%;
+    background: #059669;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Dashboard Logo + Header ------------------*/
+.logo-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.sidebar-header {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+/* Links ---------------------------------- */
+.main-links,
+.secondary-links {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-links {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.secondary-links {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.icon {
+    filter: invert(1);
+    width: 1.5rem;
+}
+
+.icon.sidebar {
+    margin: 1rem 2rem;
+    justify-self: end;
+    align-self: center;
+}
+
+.logo {
+    margin: 1rem 1.25rem;
+    filter: invert(1);
+    grid-area: 1 / 1 / 2 / 2;
+    width: 4rem;
+    justify-self: center;
+}
+
+/* Header ============================================================================================================================= */
 #header-container {
     grid-area:  1 / 2 / 2 / 3;
     display: grid;
@@ -39,6 +100,7 @@ a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:a
     box-shadow: 0 5px 10px #82d8a2;
 }
 
+/* Search ----------------------*/
 .search-container {
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -59,26 +121,7 @@ input[type=search] {
     height: 2.3rem;
 }
 
-.header-buttons-container {
-    align-self: center;
-    justify-self: left;
-}
-
-.btn-header {
-    background-color: #059669;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0 1rem 0 .5rem;
-    padding: .8rem 2rem;
-    border-radius: 20px;
-    border: none;
-}
-
-.btn-header:active {
-    box-shadow: 3px 2px 3px #82d8a2;
-}
-
+/* Profile  --------------------*/
 .profile-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
@@ -97,6 +140,7 @@ input[type=search] {
     justify-self: left;
 }
 
+/* User Info ----------------------*/
 .user-info-container {
     display: grid;
     grid-template-columns: 7rem 5fr;
@@ -125,64 +169,29 @@ input[type=search] {
     font-weight: bold;
 }
 
-/* Sidebar  ---------------------------------------------------------------------- */
-#sidebar-container {
-    grid-area: 1 / 1 / 3 / 2;
-    height: 100%;
-    background: #059669;
+/* Buttons ------------------------ */
+.header-buttons-container {
+    align-self: center;
+    justify-self: left;
+}
+
+.btn-header {
+    background-color: #059669;
     color: white;
     font-size: 1rem;
-}
-
-.logo-section {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-}
-
-.main-links, .secondary-links {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
-    margin-top: 2.5rem;
-    font-size: 1.5rem;
     font-weight: bold;
+    margin: 0 1rem 0 .5rem;
+    padding: .8rem 2rem;
+    border-radius: 20px;
+    border: none;
 }
 
-.main-links {
-    grid-template-rows: repeat(6, 1fr);
-}
-.secondary-links {
-    grid-template-rows: repeat(3, 1fr);
+.btn-header:active {
+    box-shadow: 3px 2px 3px #82d8a2;
 }
 
-.icon.sidebar {
-    margin: 1rem 2rem;
-    justify-self: end;
-    align-self: center;
-}
-
-.icon {
-    filter: invert(1);
-    width: 1.5rem;
-}
-
-.logo {
-    margin: 1rem 1.25rem;
-    filter: invert(1);
-    grid-area: 1 / 1 / 2 / 2;
-    width: 4rem;
-    justify-self: center;
-}
-
-.sidebar-header {
-    font-size: 1.75rem;
-    font-weight: bold;
-}
-
-/* Main Content -------------------------------------------------------------------------------------- */
-/* NOTE: Box shadow wasn't visible because #header-container + #main-container are both part of a larger grid defined by body el, 
+/* Main Content ================================================================================================================== */
+/* NOTE: Box shadow wasn't visible because #header-container + #main-container are both part of a larger grid defined by body element, 
 + they're adjacent to each other in the grid. Since #main-container has a background color, it will be drawn on top of 
 #header-container, covering the shadow.  Added a margin to #main-container. This will create some space between them. */
 #main-container {
@@ -196,6 +205,7 @@ input[type=search] {
     background-color: #d4fde3;
 }
 
+/* Projects ------------------------ */
 .projects-container {
     grid-area: 2 / 1 / 5 / 2;
     display: grid;
@@ -232,6 +242,7 @@ input[type=search] {
     margin: 0 0 0 10px;
 }
 
+/* Announcements ------------------------------- */
 .announcements-container {
     background-color: white;
     border-radius: 20px;
@@ -258,6 +269,7 @@ input[type=search] {
     font-size: 1.2rem;
 }
 
+/* Trending ----------------------------- */
 .trending-container {
     grid-area: 4 / 2 / 5 / 3;
     background-color: white;
@@ -280,15 +292,5 @@ input[type=search] {
     grid-template: 1fr / 1fr 3fr;
     align-items: center;
     margin: 0 0 2rem 2rem;
-}
-
-/* TEMP -------------------------------------------------------------------*/ 
-/* div {
-    border: solid 1px rgb(172, 172, 233);
-} */
-
-img {
-    width: 30px;
-    height: auto;
 }
 
