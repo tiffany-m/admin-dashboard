@@ -130,7 +130,8 @@ input[type=search] {
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
-    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -142,17 +143,18 @@ input[type=search] {
 }
 
 .icon.sidebar {
-    padding: .75rem;
+    margin: 1rem 2rem;
     justify-self: end;
     align-self: center;
 }
 
 .icon {
     filter: invert(1);
-    width: 1rem;
+    width: 1.5rem;
 }
 
 .logo {
+    margin: 1rem 1.25rem;
     filter: invert(1);
     grid-area: 1 / 1 / 2 / 2;
     width: 4rem;
@@ -164,6 +166,7 @@ input[type=search] {
     font-weight: bold;
 }
 
+/* Main Content -------------------------------------------------------------------------------------- */
 #main-container {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
