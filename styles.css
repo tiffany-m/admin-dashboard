@@ -6,8 +6,9 @@
 body {
     display: grid;
     grid-template-columns: 1.25fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
 }
 
 a {
@@ -26,6 +27,7 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 0 2rem;
 }
 
 .search-container {
@@ -50,7 +52,7 @@ input[type=search] {
 
 .header-buttons-container {
     align-self: center;
-    justify-self: center;
+    justify-self: left;
 }
 
 .btn-header {
@@ -58,7 +60,7 @@ input[type=search] {
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    margin: 1rem;
+    margin: 0 1rem 0 .5rem;
     padding: .8rem 2rem;
     border-radius: 20px;
     border: none;
@@ -84,17 +86,18 @@ input[type=search] {
 
 .user-info-container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 7rem 5fr;
     grid-template-rows: 1fr 1fr;
-    margin-bottom: 1rem;
+    justify-items: start;
+    margin-bottom: 1.2rem;
 }
 
 .profile-pic-header {
     grid-area: 1 / 1 / 3 / 2;
-    justify-self: right;
+    justify-self: left;
+    align-self: center;
     border-radius: 50%;
     width: 5.5rem;
-    margin-right: 1rem;
 }
 
 .greeting {
@@ -171,6 +174,8 @@ input[type=search] {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 3rem 1fr 3rem 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
     background-color: #d4fde3;
 }
 
@@ -178,21 +183,21 @@ input[type=search] {
     grid-area: 2 / 1 / 5 / 2;
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr 1fr;
-    margin: 20px;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .project-header {
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 2rem;
+    align-self: end;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .project {
     display: grid;
-    grid-template: 1fr 4fr 1fr / 1fr;
+    grid-template: .75fr 4fr .75fr / 1fr;
     background-color: white;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .project-title{
@@ -203,7 +208,6 @@ input[type=search] {
 .project-icons {
     justify-self: end;
     align-self: end;
-
 }
 
 .icon-content {
@@ -216,17 +220,22 @@ input[type=search] {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
-    margin: 20px 20px 20px 0;
 }
 
 .announcement-header {
     grid-area: 1 / 2 / 2 / 3;
-    font-size: 2rem;
+    align-self: end;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .announcement {
-    padding-bottom: 20px;
+    margin: 2rem;
+}
+
+.announcement-title {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
 }
 
 .trending-container {
@@ -240,7 +249,7 @@ input[type=search] {
 
 .trending-header {
     grid-area: 3 / 2 / 4 / 3;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
