@@ -16,9 +16,17 @@ a {
     color: white;
 }
 
+a:active {
+    transform: scale(0.95);
+}
+
 .profile-pic {
     border-radius: 50%;
     width: 3.5rem;
+}
+
+a:active, .icon:active, .notifications:active, .btn-header:active, .search-btn:active {
+    transform: scale(0.95);
 }
 
 /* Header ------------------------------------------------------------------------ */
@@ -65,6 +73,10 @@ input[type=search] {
     padding: .8rem 2rem;
     border-radius: 20px;
     border: none;
+}
+
+.btn-header:active {
+    box-shadow: 3px 2px 3px #82d8a2;
 }
 
 .profile-container {
